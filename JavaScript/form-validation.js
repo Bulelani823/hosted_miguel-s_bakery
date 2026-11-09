@@ -7,6 +7,7 @@ Mozilla. 2026. understanding the importance and the way to structure the differe
 
 // Get the references to the form and its elements (using your exact HTML IDs)
 const inquiryForm = document.getElementById("myForm");
+
 const fullNameInput = document.getElementById("fullName");
 const emailInput = document.getElementById("email");
 const subjectInput = document.getElementById("subject");
@@ -23,11 +24,11 @@ const termsErrorSpan = document.getElementById("termsError");
 // Add an event listener to the form's submit button
 if (inquiryForm) {
     inquiryForm.addEventListener("submit", function (event) {
-
+        
         // Prevent default form submission so we can validate it first
         event.preventDefault();
 
-        // Assume the form is valid initially
+        // Assume the form is valid initially 
         var isValid = true;
 
         // Clear any previous error messages
@@ -37,13 +38,13 @@ if (inquiryForm) {
         if (inquiryErrorSpan) inquiryErrorSpan.innerHTML = '';
         if (termsErrorSpan) termsErrorSpan.innerHTML = '';
 
-        //Validate Full Name field
+        // Validate Full Name field
         if (fullNameInput && fullNameInput.value.trim() === '') {
             nameErrorSpan.innerHTML = 'Full Name is required.';
             isValid = false;
         }
 
-        //Validate Email field
+        // Validate Email field
         var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (emailInput && emailInput.value.trim() === '') {
             emailErrorSpan.innerHTML = 'Email Address is required.';
@@ -53,24 +54,23 @@ if (inquiryForm) {
             isValid = false;
         }
 
-        //Validate Subject field
+        // Validate Subject field
         if (subjectInput && subjectInput.value.trim() === '') {
             subjectErrorSpan.innerHTML = 'Subject is required.';
             isValid = false;
         }
 
-        //Validate Message field
+        // Validate Message/Inquiry field
         if (inquiryInput && inquiryInput.value.trim() === '') {
             inquiryErrorSpan.innerHTML = 'Inquiry is required here.';
             isValid = false;
         }
 
-        //Validate Terms Checkbox
+        // Validate Terms Checkbox
         if (agreeTermsInput && !agreeTermsInput.checked) {
             termsErrorSpan.innerHTML = 'You must agree to be contacted.';
             isValid = false;
         }
-
         // If the form is valid, construct mailto link and launch Outlook
         if (isValid) {
             var fullName = fullNameInput.value.trim();
@@ -82,16 +82,17 @@ if (inquiryForm) {
             var recipient = "ST10516653@myemeris.edu.za";
 
             // Create email subject
-            var emailSubject = "Miguel's Bakery Inquiry: " + subject + " (" + inquiryType + ")";
+            var emailSubject = "Miguel's Bakery Inquiry: " + subject;
 
             // Create email message body
             var body = "Salutations Miguel's Bakery Team,\n\n" +
                 "My inquiry details are as follows:\n\n" +
                 "Full Name: " + fullName + "\n" +
                 "Email Address: " + email + "\n" +
-                "Inquiry Type: " + inquiryType + "\n\n" +
-                "Message:\n" + message + "\n\n" +
-                "Kind regards,\n" + fullName;
+                "Subject: " + subject + "\n\n" +
+                "Inquiry / Message:\n" + message + "\n\n" +
+                "Kind regards,\n" +
+                fullName;
 
             // Create the mailto link
             var mailtoLink = "mailto:" + recipient +
@@ -104,6 +105,5 @@ if (inquiryForm) {
             // Clear the form fields after triggering Outlook
             inquiryForm.reset();
         }
-
     });
 }
