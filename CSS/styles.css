@@ -1,0 +1,895 @@
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+
+/*Base Styles of the website*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #222;
+}
+
+/*Controls the main content width of the website*/
+main{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+button{
+    background-color: #4a1010;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    shape-image-threshold: calc();
+}
+
+/*The typography of the website*/
+h1{
+    font-size: 2.7rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+h4{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+/*The header of each page of the website, it will have a darker contrast*/
+header{
+    background-color: #717171;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border: #333 solid 2px;
+    box-shadow: 0px 0px 10px #333;
+}
+
+header p{
+    max-width: 700px;
+    margin: 1rem auto;
+}
+
+/*images of the website based on what miguels bakery is*/
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+label{
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    line-break: auto;
+    margin: 0 35px;
+}
+
+.center{
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0 715px;
+}
+
+.centre{
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0 670px;
+}
+
+.central{
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0 600px;
+}
+
+a{
+    color: #0b0a0a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #a77676;
+}
+
+/*The main navigation of the website*/ 
+nav{
+    background-color: #656161;
+    flex-direction: column;
+    color: #656161;
+    padding: 8px;
+    text-align: center;
+    display: list-item;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Class selector of the navigation on each page*/
+.navigation{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.navigation h2{
+    display: none;
+}
+
+.navigation ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.navigation a{
+    margin: 0 40px;
+    color: #aa2d2d;
+    text-decoration: none;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/*Sections of the website*/
+section{
+    background-color: whitesmoke;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+section{
+    color: maroon;
+    margin-bottom: 1rem;
+}
+
+/*Cards of the website to make it more presentable*/
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: #333 solid 2px;
+    box-shadow: 0px 0px 10px #333;
+    background-color: #f9f9f9;
+    border: 2.5px solid #ddd;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+
+/*List items*/
+ul,ol{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+li{
+    margin-bottom: 0.5rem;
+}
+
+#order{
+    justify-content: center;
+    text-align: center;
+    background-color: #aa2d2d;
+    color: #d11b1b;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #333;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    shape-image-threshold: calc();
+
+}
+
+#order button{
+    background-color: #4a1010;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    shape-image-threshold: calc();
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+/*Button Hover*/
+#order button:hover{
+    transform: scale(0.98);
+}
+/*Enquiry form*/
+.enquiry-form{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #333;
+}
+
+.enquiry-form label{
+    font-weight: bold;
+}
+
+.enquiry-form input,
+.enquiry-form textarea{
+    width: 100%;
+    margin-top: 0.3rem;
+    padding: 12px;
+    border-radius: 15px;
+    border: 1px solid #626060;
+    font-size: 1rem;
+}
+
+.enquiry-form button{
+    background-color: #4a1010;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    shape-image-threshold: calc();
+}
+
+/*Footer tag of the website*/
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+    border: #333 solid 2px;
+    box-shadow: 0px 0px 10px #333;
+}
+
+footer a{
+    color: #b42121;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #696464;
+    text-decoration: underline;
+}
+
+/*Extended visual styling of the website*/
+section{
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.6rem;
+    color: rgba(0,0,0,0.8);
+}
+
+section h2{
+    border-bottom: 0.15rem solid #d71b1b;
+    padding-bottom: 0.5rem;
+}
+
+input{
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 0.3rem;
+    color: rgba(0,0,0,0.8);
+
+}
+
+
+
+.card{
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 0.3rem;
+    color: rgba(0,0,0,0.8);
+}
+
+.enquiry-form input,
+.enquiry-form textarea{
+    border-radius: 0.3rem;
+    width: 100%;
+    border: 2px solid #837f7f;
+    box-sizing: border-box;
+    font-size: 1rem;
+
+}
+
+.enquiry-form button{
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+/*ID selectors of the website*/
+#welcome{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #333;
+}
+
+#welcome button{
+    background-color: #4a1010;
+    color: #8f4c4c;
+    cursor: pointer;
+    shape-image-threshold: calc();
+    border-radius: 0.3rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    display: calc();
+
+}
+
+#products{
+    list-style-type: none;
+    padding: 0;
+    color: #b42121;
+    cursor: pointer;
+}
+
+#order{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #333;
+}
+
+/*Grid Layouts*/
+
+/*Make the heading stretch across both columns*/
+#welcome,
+#products,
+#order{
+    grid-column: 1 / -1;
+}
+
+#welcome,
+#products,
+#order{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/*Psuedo-Classes*/
+
+/*Navigation Hover*/
+.navigation a:hover{
+    background-color: #9e8c8c;
+    border-radius: 0.3rem;
+}
+
+/*Navigation Focus*/
+.navigation a:focus{
+    outline: 0.2rem solid rgb(253, 184, 10);
+}
+
+/*Navigation Active*/
+.navigation a:active{
+    background-color: #dc1010;
+}
+
+footer a{
+    color: #b42121;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #696464;
+    text-decoration: underline;
+}
+
+/*Form Focus*/
+.enquiry-form input:focus,
+.enquiry-form textarea:focus{
+    border-color: #b42121;
+    outline: 0.15rem solid rgb(180, 72, 72);
+}
+
+/*Button Hover*/
+.enquiry-form button:hover{
+    transform: scale(0.98);
+}
+
+/* ProDuct Links */
+#products a:hover{
+    text-decoration: none;
+    color: rgb(186, 28, 28);
+
+}
+
+
+/* Tablet responsiveness of the website to make sure that the layout will not get messed up when changing to a tablet format */
+@media (max-width: 900px){
+    #images
+    #welcome,
+    #products,
+    #order{
+        grid-template-columns: 1fr;
+    }
+}
+
+.main-nav ul{
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+main{
+    width: 92%;
+}
+
+h1{
+    font-size: 2.2rem;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+/* Mobile responsiveness of the website to make sure that the layout will not get messed up when changing to a mobile format */
+@media (max-width: 600px) {
+    body{
+        font-size: 0.95rem;
+    }
+    header{
+        padding: 2rem 1rem;
+    }
+    #images{
+        width: 10rem;
+    }
+    .navigation ul{
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    main{
+        width: 95%;
+        padding: 1rem 0;
+    }
+    section{
+        padding: 1.2rem;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+
+    .contact-form button{
+        width: 100%;
+    }
+}
+
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+
+        }
+
+        h1{
+            text-align: center;
+            color: #333;
+
+        }
+
+        .accordion-container{
+            max-width: 600px;
+            margin: 30px auto;
+            padding-top: 110px;
+
+        }
+
+        .accordion{
+            background-color: #ff0707;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+
+        }
+
+        .accordion:hover{
+            background-color: #b37a00;
+
+        }
+
+        .accordion.active{
+            background-color: #856d00;
+
+        }
+
+        .panel{
+            background-color: white;
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease,
+            padding 0.3s ease;
+
+        }
+
+        .panel.open{
+            padding: 15px 18px;
+
+        }
+
+        .panel p{
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+
+        }
+
+/* Fixed Header styling */
+.site-header {
+    position: fixed;        /* Keeps the header locked at top when scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;            /* Spans full screen width */
+    height: 120px;           /* Fixed height for consistent layout */
+    
+    display: flex;
+    justify-content: space-between; /* Pushes left group to far left, right group to far right */
+    align-items: center;    /* Centers content vertically */
+    
+    padding: 0 30px;
+    background-color: #656161;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;          /* Keeps header above all body content */
+}
+
+/* Left Section: Logo + Site Title */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;             /* Space between logo and site title */
+}
+
+.logo-img {
+    height: 40px;          /* Adjust logo size */
+    width: auto;
+}
+
+.site-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #271e11;
+}
+
+/* Right Section: Page Name + Navigation */
+.header-right {
+    display: flex;
+    align-items: center;
+    padding-left: 55px;
+    gap: 20px;             /* Space between page name and nav links */
+}
+
+/* Add top margin to main content so it doesn't get covered by the fixed header */
+.content {
+    margin-top: 90px; 
+    padding: 20px;
+}
+
+.intro {
+    padding-top: 95px;
+}
+
+
+.checkbox-group{
+    text-align: left;
+    margin: 15px 0;
+}
+
+.checkbox-group label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"]{
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+
+/*Search Section */
+.search-section{
+    text-align: center;
+    margin-bottom: 35px;
+
+}
+
+#searchInput{
+    width: 100%;
+    max-width: 500px;
+    padding: 14px;
+    font-size: 16px;
+
+    border: 2px solid #ddd;
+    border-radius: 8px;
+
+    /* Smooth border color change */
+    transition: border-color 0.3s ease;
+
+}
+
+#searchInput:focus{
+    outline: none;
+    border-radius: #ff0707;
+    
+}
+
+/*Destination Cards */
+.card-container{
+    display: grid;
+
+    /* Responsive card layout */
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%,280px),1fr)
+    );
+
+    gap: 25px;
+    margin-top: 20px;
+
+}
+
+.courses-card{
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    /*Animation for card hover */ 
+    transition: transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+
+}
+
+/* Raise card slighly on hover */
+.courses-card:hover{
+    transform: translateY(-5px);
+
+}
+
+/* Destination Images */
+.gallery-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+
+    transition: opacity 0.3s ease;
+
+}
+
+.gallery-image:hover{
+    opacity: 0.8;
+
+}
+
+.gallery-image:focus-visible{
+    outline: 3px solid #ff0000;
+    outline-offset: -3px;
+
+}
+
+/* Card text */
+.card-content{
+    padding: 20px;
+
+}
+
+.card-content h3{
+    margin-top: 0;
+    color: #8c1616;
+    font-size: 25px;
+
+}
+
+.description{
+    color: #777;
+    font-size: 19px;
+    font-weight: bold;
+
+}
+
+.result-box{
+    margin-top: 15px; 
+    padding: 10px; 
+    background: #e9ecef; 
+    border-radius: 5px; 
+    text-align: center; 
+    font-weight: bold;
+    color: #333;
+}
+
+
+.info-box{
+    background: #fff; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border-radius: 5px; 
+    font-size: 0.9rem; 
+    text-align: left; 
+    max-width: 500px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+button{
+    background-color: #810909;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    shape-image-threshold: calc();
+}
+
+.gallery img{
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            display: inline-block;
+            margin: 40px;
+            cursor: pointer;
+            border-radius: 8px;
+
+
+            transition: transform 0.3s ease,
+            opacity 0.3s ease;
+        }
+
+        .gallery img:hover{
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+
+        .lightbox{
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            background-color: rgba(0, 0, 0, 0.9);
+
+            justify-content: center;
+            align-items: center;
+
+            z-index: 1000;
+        }
+
+        .lightbox img{
+            max-width: 80%;
+            max-height: 80%;
+
+            animation: zoomIn 0.3s ease;
+        }
+
+        @keyframes zoomIn
+        {
+            
+            from{
+                transform: scale(0.5);
+                opacity: 0;
+            }
+
+            
+            to{
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        
+        .close{
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        .close:hover{
+            color: red;
+        }
+
+span{
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+
+

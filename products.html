@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Miguel's Bakery</title>
+
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <meta name="description" content="Miguel's Bakery - Fresh bread, cakes, and pastries baked daily in Pietermaritzburg. Order online for pickup or delivery in PMB.">
+  <meta name="author" content="Miguel's Bakery">
+  <meta name="keywords" content="bakery, bread, cakes, pastries, Miguel's Bakery, Pietermaritzburg, PMB">
+  
+
+</head>
+<body>
+
+    <!--One of the three main components of the website: Header Tag-->
+     <header class="site-header">
+
+        <div class="header-left">
+            <img 
+        src="images/miguels.webp"
+        width="70"
+        height="70"
+        >  
+        <span class="site-title"><em><strong>Miguel's Bakery</strong></em></span>
+        </div>
+
+        <div class="header-right">
+            <nav class="header-nav">
+         <!--Navigation of the website-->
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact Us</a>
+            </nav>
+        </div> 
+</header>
+
+<br>
+
+        <!--Images of the products being advertised-->
+    <main class="card">
+
+        <br><br>
+        <br><br>
+<!--Search Section-->
+        <section class="search-section">
+
+            <h2>Find your preferred sweet tricks!</h2>
+
+            <p>Search for your product: </p>
+
+            <input type="text" id="searchInput" placeholder="Search Products..."
+                aria-activedescendant="Search Products">
+
+        </section>
+
+        <!--Courses Card-->
+        <section class="card">
+            <h2>Courses Available Now:</h2>
+
+            <div class="card-container">
+
+                <!--Product 1-->
+                <article class="courses-card">
+                    <img src="images/cake1.jpg"
+        alt="Nature Image 1"
+        onclick="openLightbox(this.src)">
+
+                    <div class="card-content">
+                        <h3>Chocolate Cake - R180</h3>
+
+                        <p class="description">
+                            A delicious and moist chocolate cake perfect for any occasion.
+                        </p>
+
+                        <p>
+                            Content: Flour, sugar, cocoa powder, eggs, butter, baking powder, vanilla extract
+                        </p>
+
+                        <!--Accordion button-->
+                        <button class="accordion" aria-expanded="false">
+                            More infomation
+                        </button>
+
+                        <!--Hidden Information-->
+                        <div class="panel">
+                            <div class="panel-content">
+                                <p>
+                                    The extra details about the chocolate cake include its rich chocolate flavor, 
+                                    soft texture, and the option to customize it with various frostings and toppings.
+                                     Perfect for birthdays, celebrations, or simply indulging in a sweet treat!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!--Product 2-->
+                <article class="courses-card">
+                    <img src="images/cake2.jpg"
+        alt="Nature Image 2"
+        onclick="openLightbox(this.src)">
+
+                    <div class="card-content">
+                        <h3>Vanilla Cake - R200</h3>
+
+                        <p class="description">
+                            A light and fluffy vanilla cake perfect for any occasion.
+                        </p>
+
+                        <p>
+                            Content: Flour, sugar, eggs, butter, baking powder, vanilla extract
+                        </p>
+
+                        <!--Accordion button-->
+                        <button class="accordion" aria-expanded="false">
+                            More infomation
+                        </button>
+
+                        <!--Hidden Information-->
+                        <div class="panel">
+                            <div class="panel-content">
+                                <p>
+                                    The extra details about the vanilla cake include its delicate vanilla flavor, 
+                                    soft and airy texture, and the option to customize it with various frostings and fillings.
+                                     Perfect for weddings, birthdays, or any special celebration!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!--Product 3-->
+                <article class="courses-card">
+                    <img src="images/cake3.jpg"
+        alt="Nature Image 3"
+        onclick="openLightbox(this.src)">
+                    <div class="card-content">
+
+                        <h3>Caramel-vanilla Cake - R180</h3>
+
+                        <p class="description">
+                            A delicious cake with a rich caramel flavor and vanilla notes
+                        </p>
+
+                        <p>
+                            Content: Flour, sugar, eggs, butter, baking powder, vanilla extract, caramel
+                        </p>
+
+                        <!--Accordion button-->
+                        <button class="accordion" aria-expanded="false">
+                            More infomation
+                        </button>
+
+                        <!--Hidden Information-->
+                        <div class="panel">
+                            <div class="panel-content">
+                                <p>
+                                    The extra details about the caramel-vanilla cake include its luscious caramel flavor, 
+                                    complemented by the subtle sweetness of vanilla. The cake is moist and tender,
+                                     making it a delightful treat for any occasion. It can be enjoyed on its own or paired with 
+                                     a variety of frostings and toppings for added indulgence.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+        
+
+            <!--Product 4-->
+                <article class="courses-card">
+                    <img src="images/cake4.jpg"
+        alt="Nature Image 3"
+        onclick="openLightbox(this.src)">
+
+                    <div class="card-content">
+                        <h3>Red Velvet with vanilla frosting - R200</h3>
+
+                        <p class="description">
+                            A moist and flavorful cake with a rich red color and smooth vanilla frosting.
+                        </p>
+
+                        <p>
+                            Content: flour, sugar, eggs, butter, baking powder, cocoa powder, vanilla extract, cream cheese frosting
+                        </p>
+
+                        <!--Accordion button-->
+                        <button class="accordion" aria-expanded="false">
+                            More infomation
+                        </button>
+
+                        <!--Hidden Information-->
+                        <div class="panel">
+                            <div class="panel-content">
+                                <p>
+                                    The extra details about the red velvet cake with vanilla frosting include its unique flavor profile, 
+                                    which combines a hint of cocoa with a subtle tang from the buttermilk. The cake's vibrant red color 
+                                    makes it visually appealing, while the smooth and creamy vanilla frosting adds a delightful contrast. 
+                                    This cake is perfect for special occasions, celebrations, or simply as a treat for yourself and loved ones.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!--Product 5-->
+                <article class="courses-card">
+                    <img src="images/cake5.jpg"
+        alt="Nature Image 1"
+        onclick="openLightbox(this.src)">
+
+                    <div class="card-content">
+                        <h3>BarOne Cake - R200</h3>
+
+                        <p class="description">
+                            A delicious and moist chocolate cake perfect for any occasion.
+                        </p>
+
+                        <p>
+                            Content: Flour, sugar, cocoa powder, eggs, butter, baking powder, vanilla extract
+                        </p>
+
+                        <!--Accordion button-->
+                        <button class="accordion" aria-expanded="false">
+                            More infomation
+                        </button>
+
+                        <!--Hidden Information-->
+                        <div class="panel">
+                            <div class="panel-content">
+                                <p>
+                                    The extra details about the chocolate cake include its rich chocolate flavor, 
+                                    soft texture, and the option to customize it with various frostings and toppings.
+                                     Perfect for birthdays, celebrations, or simply indulging in a sweet treat!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!--Product 6-->
+                <article class="courses-card">
+                    <img src="images/cake6.jpg"
+        alt="Nature Image 2"
+        onclick="openLightbox(this.src)">
+
+                    <div class="card-content">
+                        <h3>Vanilla TV Bar Cake - R200</h3>
+
+                        <p class="description">
+                            A light and fluffy vanilla cake perfect for any occasion.
+                        </p>
+
+                        <p>
+                            Content: Flour, sugar, eggs, butter, baking powder, vanilla extract
+                        </p>
+
+                        <!--Accordion button-->
+                        <button class="accordion" aria-expanded="false">
+                            More infomation
+                        </button>
+
+                        <!--Hidden Information-->
+                        <div class="panel">
+                            <div class="panel-content">
+                                <p>
+                                    The extra details about the vanilla cake include its delicate vanilla flavor, 
+                                    soft and airy texture, and the option to customize it with various frostings and fillings.
+                                     Perfect for weddings, birthdays, or any special celebration!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!--Product 7-->
+                <article class="courses-card">
+                    <img src="images/cake7.jpg"
+        alt="Nature Image 3"
+        onclick="openLightbox(this.src)">
+                    <div class="card-content">
+
+                        <h3>Caramel-vanilla Cake with nouget - R200</h3>
+
+                        <p class="description">
+                            A delicious cake with a rich caramel flavor and vanilla notes
+                        </p>
+
+                        <p>
+                            Content: Flour, sugar, eggs, butter, baking powder, vanilla extract, caramel
+                        </p>
+
+                        <!--Accordion button-->
+                        <button class="accordion" aria-expanded="false">
+                            More infomation
+                        </button>
+
+                        <!--Hidden Information-->
+                        <div class="panel">
+                            <div class="panel-content">
+                                <p>
+                                    The extra details about the caramel-vanilla cake include its luscious caramel flavor, 
+                                    complemented by the subtle sweetness of vanilla. The cake is moist and tender,
+                                     making it a delightful treat for any occasion. It can be enjoyed on its own or paired with 
+                                     a variety of frostings and toppings for added indulgence.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+        
+
+            <!--Product 8-->
+                <article class="courses-card">
+                    <img src="images/cake8.jpg"
+        alt="Nature Image 3"
+        onclick="openLightbox(this.src)">
+
+                    <div class="card-content">
+                        <h3>Red Velvet with vanilla frosting with fresh cresh - R200</h3>
+
+                        <p class="description">
+                            A moist and flavorful cake with a rich red color and smooth vanilla frosting.
+                        </p>
+
+                        <p>
+                            Content: flour, sugar, eggs, butter, baking powder, cocoa powder, vanilla extract, cream cheese frosting
+                        </p>
+
+                        <!--Accordion button-->
+                        <button class="accordion" aria-expanded="false">
+                            More infomation
+                        </button>
+
+                        <!--Hidden Information-->
+                        <div class="panel">
+                            <div class="panel-content">
+                                <p>
+                                    The extra details about the red velvet cake with vanilla frosting include its unique flavor profile, 
+                                    which combines a hint of cocoa with a subtle tang from the buttermilk. The cake's vibrant red color 
+                                    makes it visually appealing, while the smooth and creamy vanilla frosting adds a delightful contrast. 
+                                    This cake is perfect for special occasions, celebrations, or simply as a treat for yourself and loved ones.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!--Product 9-->
+                <article class="courses-card">
+                    <img src="images/cake9.jpg"
+        alt="Nature Image 1"
+        onclick="openLightbox(this.src)">
+
+                    <div class="card-content">
+                        <h3>Lint Cake - R250</h3>
+
+                        <p class="description">
+                            A delicious and moist chocolate cake perfect for any occasion.
+                        </p>
+
+                        <p>
+                            Content: Flour, sugar, cocoa powder, eggs, butter, baking powder, vanilla extract
+                        </p>
+
+                        <!--Accordion button-->
+                        <button class="accordion" aria-expanded="false">
+                            More infomation
+                        </button>
+
+                        <!--Hidden Information-->
+                        <div class="panel">
+                            <div class="panel-content">
+                                <p>
+                                    The extra details about the chocolate cake include its rich chocolate flavor, 
+                                    soft texture, and the option to customize it with various frostings and toppings.
+                                     Perfect for birthdays, celebrations, or simply indulging in a sweet treat!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                 <!--Lightbox-->
+    <div class="lightbox" 
+    id="lightbox"
+    role="dialog" 
+    aria-modal="true" 
+    aria-label="Enlarged image"
+    onclick="closeLightbox()">
+
+        <!--Close Button-->
+        <button 
+        class="close" 
+        type="button" 
+        aria-label="Close image" 
+        onclick="closeLightbox()">
+            &times;
+        </button>
+
+        <!--Enlarged Image-->
+        <img id="lightboxImage"
+        src=""
+        alt="Enlarged image"
+        onclick="event.stopPropagation()">
+
+        <!--It is to make sure that any image that the user 
+        clicks on is enlarged-->
+
+    </div>
+
+    </main>
+
+    <div class="card">
+     <!--Shows the selection of the different options of the food that you will be able to get-->
+        <label>Payment Options:</label>
+        <select id="order" name="order">
+
+            <option value="web">
+                Cash Payment
+            </option>
+
+            <option value="web">
+                EFT
+            </option>
+
+            <option value="web">
+                Cheque Payment
+            </option>
+
+            <option value="web">
+                Loan
+            </option>
+
+            <option value="web">
+                Other
+            </option>
+
+        </select>
+    </div>
+
+        <br><br>
+
+        <!--Button to submit the order-->
+        <button id="welcome"><a href="booking.html">Submit</a></button>
+    
+        <br><br>
+
+      <!--Footer for the whole webpage-->
+     <footer>
+        <p>&copy; 2026 Miguel's Bakery. All rights reversed.</p>
+        <p>Designed by Bulelani Mkhize</p>
+        <p>
+            <a href="https://github.com/EMKNPM/wede5020-wede-poe-bulelani823" target="_blank">Visit our GitHub</a>
+        </p>
+
+        <div>
+            <img src="images/miguels.webp"
+            alt="Placeholder Image"
+            width="100">
+        </div>
+    </footer>
+
+    <script src="JavaScript/lightbox.js"></script>
+    <script src="JavaScript/accordion.js"></script>
+    <script src="JavaScript/search.js"></script>
+
+</body>
+</html>

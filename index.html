@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main - Miguel's Bakery</title>
+
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <meta name="description" content="Miguel's Bakery - Fresh bread, cakes, and pastries baked daily in Pietermaritzburg. Order online for pickup or delivery in PMB.">
+    <meta name="author" content="Miguel's Bakery">
+    <meta name="keywords" content="bakery, bread, cakes, pastries, Miguel's Bakery, Pietermaritzburg, PMB   ">
+    <meta property="og:title" content="Miguel's Bakery | Fresh From The Oven Daily">
+    <meta property="og:description" content="Warm bread, cakes and pastries baked fresh every morning.">
+    <meta property="og:image" content="https://miguelsbakery.co.za/images/bakery.jpg">
+
+</head>
+<body>
+
+    <!--One of the three main components of the website: Header Tag-->
+     <header class="site-header">
+
+        <div class="header-left">
+            <img 
+        src="images/miguels.webp"
+        width="70"
+        height="70"
+        >  
+        <span class="site-title"><em><strong>Miguel's Bakery</strong></em></span>
+        </div>
+
+        <div class="header-right">
+            <nav class="header-nav">
+         <!--Navigation of the website-->
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact Us</a>
+            </nav>
+        </div> 
+</header>
+
+    <!--Main Content of the Webpage-->
+<br><br>
+    <main>
+        <!--Welcome section-->
+        <section id="welcome">
+
+            <!--The products which can be recommended to newcomers-->
+            <article class="card">
+                <h2><strong>Welcome to Miguel's Bakery</strong></h2>
+
+                <p>
+                    We are a bakery that has been in business for over 30 years. 
+                    We offer a wide variety of baked goods, including cakes, pastries,
+                     and bread. Our products are made with the finest ingredients and 
+                     are baked fresh daily.
+                </p>
+
+                <p>
+                    We are committed to providing our customers with the best possible 
+                    service and products. We hope you enjoy your visit to our website 
+                    and we look forward to serving you in the future.
+                </p>
+
+            <h2>Recommended:</h2>
+
+            <!--It will show a lightbox of the images of the recommended products-->
+
+            <!--Image Gallery-->
+    <div class="gallery">
+
+        <img src="images/cupcakes.jpg"
+                    alt="Placeholder image"
+                    width="200"
+        onclick="openLightbox(this.src)">
+        Cupcakes
+
+        <img src="images/cakes.jpg"
+                    alt="Placeholder image"
+                    width="200"
+                     onclick="openLightbox(this.src)"
+                    >
+        Cakes
+
+        <img src="images/pastries.jpg"
+                    alt="Placeholder image"
+                    width="200"
+                     onclick="openLightbox(this.src)">
+        Pastries
+
+        <img src="images/cream buns.jpg"
+                    alt="Placeholder image"
+                    width="200"
+                     onclick="openLightbox(this.src)">
+        Cream Buns
+    </div>
+
+     <!--Lightbox-->
+    <div class="lightbox" 
+    id="lightbox"
+    role="dialog" 
+    aria-modal="true" 
+    aria-label="Enlarged image"
+    onclick="closeLightbox()">
+
+        <!--Close Button-->
+        <button 
+        class="close" 
+        type="button" 
+        aria-label="Close image" 
+        onclick="closeLightbox()">
+            &times;
+        </button>
+
+        <!--Enlarged Image-->
+        <img id="lightboxImage"
+        src=""
+        alt="Enlarged image"
+        onclick="event.stopPropagation()">
+
+        <!--It is to make sure that any image that the user 
+        clicks on is enlarged-->
+
+    </div>
+
+        </section>
+
+    <!--Image of a baker-->   
+        <article class="card">
+
+        <div id="image">
+            <img src="images/baker1.webp"
+            alt="Placeholder image"
+            width="200"
+             onclick="openLightbox(this.src)">
+ 
+            <p>
+                A picture showing a chef who is making our famous pastries.
+            </p>
+        </div>
+
+        </article>
+
+    </main>
+
+    </div>
+
+    <br> <br>
+      <!--Footer for the whole webpage-->
+     <footer>
+        <p>&copy; 2026 Miguel's Bakery. All rights reversed.</p>
+        <p>Designed by Bulelani Mkhize</p>
+        <p>
+            <a href="https://github.com/EMKNPM/wede5020-wede-poe-bulelani823" target="_blank">Visit our GitHub</a>
+        </p>
+
+        <div>
+            <img src="images/miguels.webp"
+            alt="Placeholder Image"
+            width="100">
+        </div>
+    </footer>
+
+    <script src="JavaScript/lightbox.js"></script>
+    <script src="JavaScript/accordion.js"></script>
+    
+</body>
+</html>

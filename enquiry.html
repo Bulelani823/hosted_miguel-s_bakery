@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - Miguel's Bakery</title>
+
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <meta name="description" content="Miguel's Bakery - Fresh bread, cakes, and pastries baked daily in Pietermaritzburg. Order online for pickup or delivery in PMB.">
+    <meta name="author" content="Miguel's Bakery">
+    <meta name="keywords" content="bakery, bread, cakes, pastries, Miguel's Bakery, Pietermaritzburg, PMB   ">
+    <meta property="og:title" content="Miguel's Bakery | Fresh From The Oven Daily">
+    <meta property="og:description" content="Warm bread, cakes and pastries baked fresh every morning.">
+    <meta property="og:image" content="https://miguelsbakery.co.za/images/bakery.jpg">
+
+</head>
+<body>
+
+    <!--One of the three main components of the website: Header Tag-->
+     <header class="site-header">
+
+        <div class="header-left">
+            <img 
+        src="images/miguels.webp"
+        width="70"
+        height="70"
+        >  
+        <span class="site-title"><em><strong>Miguel's Bakery</strong></em></span>
+        </div>
+
+        <div class="header-right">
+            <nav class="header-nav">
+         <!--Navigation of the website-->
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact Us</a>
+            </nav>
+        </div> 
+</header>
+
+    <main class="intro">
+        <!--Start of the online enquiry of the website-->
+        <section id="enquiry-form" class="enquiry-form">
+            <!--Subheading of what they are all about-->
+            <h2>Enquiry Form:</h2>
+
+            <!--Text showing the vision and mission statement and also shows deep undertones of which target audience they appeal to-->
+            <p id="info"><strong>We value your feedback and inquiries. Please fill out the form below,
+                 and we will get back to you as soon as possible.</strong></p>
+
+             <!--Start of the online enquiry of the website-->
+            <h2>Online Enquiry</h2>
+
+            <form id="myForm">
+
+        <label for="fullName">Full Name:</label>
+
+        <input type="text" id="fullname"
+        name="fullname">
+        <span id="nameError" class="error"></span>
+        <br> 
+
+        <label for="email">Email Address:</label>
+
+        <input type="email" id="email" name="email">
+        <span id="emailError" 
+        class="error"></span>
+        <br> 
+
+        <!-- Subject -->
+        <label for="subject">Subject:</label>
+        <br>
+        <input
+        type="text"
+        id="subject"
+        name="subject"
+        placeholder="Enter a subject"
+        >
+        <span id="subjectError" class="error"></span>
+
+        <br><br>
+
+        <!-- Message -->
+        <label for="message">What is your inquiry about?:</label>
+        <br>
+
+        <input
+        id="message"
+        name="message"
+        rows="5"
+        cols="30"
+        placeholder="Enter your message"
+        >
+        <span id="messageError" class="error"></span>
+
+        <!--Terms Checkbox-->
+                    <!--MDN Web Docs, 2025-->
+                    <div class="card">
+                        <input type="checkbox" id="agreeTerms" name="agree_terms">
+                        <label for="agreeTerms">I agree to be contacted regarding this inquiry that has been sent</label>
+                    </div>
+                    <span id="termsError" class="error"></span>
+                    <br>
+
+                    <!--Buttons-->
+            <!--Submit and Reset buttons for the form-->
+                    <button type="submit">Send Inquiry</button>
+
+                    <button type="reset">Clear Form</button>
+
+        <br><br>
+
+                </form>
+        </section>
+
+         <!--Image of a baker hat-->
+        <div id="image">
+        <img src="images/baker-hat.jpg"
+        alt="Placeholder Image"
+        width="400">
+    </div>
+
+    </main>
+
+      <!--Footer for the whole webpage-->
+    <footer>
+        <p>&copy; 2026 Miguel's Bakery. All rights reversed.</p>
+        <p>Designed by Bulelani Mkhize</p>
+        <p>
+            <a href="https://github.com/EMKNPM/wede5020-wede-poe-bulelani823" target="_blank">Visit our GitHub</a>
+        </p>
+
+        <div>
+            <img src="images/miguels.webp"
+            alt="Placeholder Image"
+            width="100">
+        </div>
+    </footer>
+
+    <!--Javascript-->
+    <script src="JavaScript/lightbox.js"></script>
+    <script src="JavaScript/form-validation.js"></script>
+    
+</body>
+</html>

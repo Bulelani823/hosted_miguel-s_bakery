@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page - Miguel's Bakery</title>
+
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <meta name="description" content="Miguel's Bakery - Fresh bread, cakes, and pastries baked daily in Pietermaritzburg. Order online for pickup or delivery in PMB.">
+    <meta name="author" content="Miguel's Bakery">
+    <meta name="keywords" content="bakery, bread, cakes, pastries, Miguel's Bakery, Pietermaritzburg, PMB   ">
+    <meta property="og:title" content="Miguel's Bakery | Fresh From The Oven Daily">
+    <meta property="og:description" content="Warm bread, cakes and pastries baked fresh every morning.">
+    <meta property="og:image" content="https://miguelsbakery.co.za/images/bakery.jpg">
+
+</head>
+<body>
+    <!--One of the three main components of the website: Header Tag-->
+     <header class="site-header">
+
+        <div class="header-left">
+            <img 
+        src="images/miguels.webp"
+        width="70"
+        height="70"
+        >  
+        <span class="site-title"><em><strong>Miguel's Bakery</strong></em></span>
+        </div>
+
+        <div class="header-right">
+            <nav class="header-nav">
+         <!--Navigation of the website-->
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact Us</a>
+            </nav>
+        </div> 
+</header>
+
+<main>
+<h2 class="intro">Calculate the cost:</h2>
+    <p>Welcome to our calculate page. Here you can find tools 
+            and resources to help you calculate various aspects of 
+            pet care.</p>
+        
+        <!-- Add your calculation tools and resources here -->
+    <h2>Service Quote Calculator</h2>
+        <p>Select a product and enter the number of items to apply automatic discount tiers:</p>
+        <!-- Information Box showing discount rules for user clarity -->
+        <div class="info-box">
+            <strong>Discount Tiers:</strong>
+            <ul style="margin: 5px 0 0 20px; padding: 0;">
+                <li>1 items: No discount</li>
+                <li>2 items: 5% discount</li>
+                <li>3 items: 10% discount</li>
+                <li>More than 3 items: 15% discount</li>
+            </ul>
+        </div>
+
+        <!-- Centered Calculator Card Box -->
+        <div class="info-box">
+            
+            <h3>Select Your Courses/Bookings:</h3>
+
+            <!-- Checkbox Options with Course Prices stored in value attributes -->
+            <div class="form-group checkbox-group">
+                <label><input type="checkbox" name="course" value="150"> Chocolate Cake - R150</label>
+                <label><input type="checkbox" name="course" value="180"> Caramel Cake - R180</label>
+                <label><input type="checkbox" name="course" value="200"> Caramel/Vanilla Cake - R200</label>
+                <label><input type="checkbox" name="course" value="200"> Red Velet with Vanilla - R200</label>
+                <label><input type="checkbox" name="course" value="200"> BarOne Cake - R200</label>
+                <label><input type="checkbox" name="course" value="200"> Vanilla TV Bar Cake - R200</label>
+                <label><input type="checkbox" name="course" value="200"> Caramel-vanilla Cake with nouget - R200</label>
+                <label><input type="checkbox" name="course" value="250"> Lint Cake - R250</label>
+            </div>
+
+            <!-- Trigger Calculation Function on Click -->
+            <button onclick="calculatePrice()">Calculate Price</button>
+
+            <!-- Result Display Box -->
+            <div class="result-box">
+                Total Quote: R<span id="totalDisplay">0.00</span>
+            </div>
+        </div>
+
+        <button><a id="welcome" href="enquiry.html">Make Enquiry</a></button>
+
+</main>
+
+<!--Footer for the whole webpage-->
+    <footer>
+        <p>&copy; 2026 Miguel's Bakery. All rights reversed.</p>
+        <p>Designed by Bulelani Mkhize</p>
+        <p>
+            <a href="https://github.com/EMKNPM/wede5020-wede-poe-bulelani823" target="_blank">Visit our GitHub</a>
+        </p>
+
+        <div>
+            <img src="images/miguels.webp"
+            alt="Placeholder Image"
+            width="100">
+        </div>
+    </footer>
+
+    <script src="JavaScript/calculator.js"></script>
+
+    
+</body>
+</html>
